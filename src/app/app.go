@@ -9,7 +9,7 @@ import (
 
 func main() {
 
-	repository.OpenDB("mysql", "username:password@tcp(127.0.0.1:3306)/tablename")
+	repository.OpenDB("mysql", "username:password@tcp(127.0.0.1:3306)/database")
 	defer repository.CloseDB()
 	router.Start()
 
